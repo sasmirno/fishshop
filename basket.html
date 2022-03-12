@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>Корзина</title>
+</head>
+<body>
+	<header class="header lock-padding">
+		<div class="container">
+			<div class="header__body">
+				<div class="header__logo">
+					<a href="aquarium.html"><img src="img/logo.png" alt="Логотип"></a>
+				</div>
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li>
+							<a href="aquarium.html" class="header__link">Аквариум</a>
+						</li>
+						<li>
+							<a href="showcase.html" class="header__link">Витрина</a>
+						</li>
+						<li>
+							<a href="basket.html" class="header__link">Корзина</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="wrapper">
+		<main class="container">
+			<div class="basket">
+				<div class="basket__content" id="cart_content"></div>
+				<button class="basket__button" id="clear_cart">Всё не кросивое</button>
+				<button href="#image2" class="basket__button basket__button_beauty popup-link">Кросивое</button>
+			</div>
+		</main>
+		<div id="image2" class="popup">
+			<div class="popup__body">
+				<div class="popup__content_image">
+					<a href="#" class="popup__close close-popup">Закрыть</a>
+					<div class="popup__image">
+						<img src="img/cat.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__opened_list">
+				<ul class="footer__list">
+					<li>Надпись</li>
+					<li>Пись</li>
+					<li>Подпись</li>
+				</ul>
+			</div>
+			<details class="footer__hidden_list">
+			    <summary class="footer__title">Тут что-то спрятано</summary>
+			    <ul class="footer__list">
+					<li>Надпись</li>
+					<li>Пись</li>
+					<li>Подпись</li>
+				</ul>
+			</details>
+			<p class="footer__text">Строчка про защиту прав и прочая юридическая лабуда</p>
+		</div>
+	</footer>
+	<script src="header.js"></script>
+	<script src="shop.js"></script>
+	<script src="popup.js"></script>
+</body>
+</html>

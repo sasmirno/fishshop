@@ -1,0 +1,245 @@
+.aquarium{
+	padding: 100px 250px 0px 0px;
+}
+.aquarium__seaweed{
+	display: block;
+	position: fixed;
+	width: 450px;
+	bottom: 0px;
+	z-index: -1;
+}
+.aquarium__fish2{
+	display: block;
+	position: relative;
+	animation: swim1 8s infinite;
+	width: 250px;
+	z-index: 2;
+}
+.aquarium__fish6{
+	display: block;
+	position: relative;
+	animation: swim2 10s infinite linear;
+	width: 250px;
+	z-index: 2;
+}
+.aquarium__fish7{
+	display: block;
+	position: relative;
+	animation: swim1 7s infinite;
+	width: 250px;
+	z-index: 2;
+}
+.aquarium__fish8{
+	display: block;
+	position: relative;
+	animation: swim2 5s infinite linear;
+	width: 250px;
+	z-index: 2;
+}
+.aquarium__fish9{
+	display: block;
+	position: relative;
+	animation: swim1 6s infinite linear;
+	width: 250px;
+	z-index: 2;
+}
+.aquarium__fish11{
+	display: block;
+	position: relative;
+	animation: swim2 9s infinite;
+	width: 250px;
+	z-index: 2;
+}
+.aquarium__snail{
+	display: block;
+	position: fixed;
+	animation: swim1 200s infinite linear;
+	width: 75px;
+	bottom: 0;
+	z-index: 2;
+}
+@keyframes swim1{
+	0% {
+		left: 0%;
+	}
+	48% {
+		left: 100%;
+		transform: scaleX(1);
+	}
+	52%{
+		transform: scaleX(-1);
+		left: 100%;
+	}
+	96%{
+		transform: scaleX(-1);
+		left: 0%;
+	}
+}
+@keyframes swim2{
+	0% {
+		left: 100%;
+	}
+	48% {
+		left: 0%;
+		transform: scaleX(1);
+	}
+	52%{
+		transform: scaleX(-1);
+		left: 0%;
+	}
+	96%{
+		transform: scaleX(-1);
+		left: 100%;
+	}
+	100%{
+		left: 100%;
+	}
+}
+/**/
+@media (max-width: 1280px){
+	.aquarium{
+		padding: 100px 220px 0px 0px;
+	}
+	.aquarium__seaweed{
+		width: 375px;
+	}
+	.aquarium__fish2{
+		animation: swim1 7s infinite;
+		width: 220px;
+	}
+	.aquarium__fish6{
+		animation: swim2 9s infinite;
+		width: 220px;
+	}
+	.aquarium__fish7{
+		animation: swim1 6s infinite;
+		width: 220px;
+	}
+	.aquarium__fish8{
+		animation: swim2 4s infinite linear;
+		width: 220px;
+	}
+	.aquarium__fish9{
+		animation: swim1 5s infinite linear;
+		width: 220px;
+	}
+	.aquarium__fish11{
+		animation: swim2 8s infinite;
+		width: 220px;
+	}
+	.aquarium__snail{
+		animation: swim1 175s infinite linear;
+		width: 61px;
+	}
+}
+
+@media (max-width: 1024px){
+	.aquarium{
+		padding: 100px 190px 0px 0px;
+	}
+	.aquarium__seaweed{
+		width: 300px;
+	}
+	.aquarium__fish2{
+		animation: swim1 6s infinite;
+		width: 190px;
+	}
+	.aquarium__fish6{
+		animation: swim2 8s infinite;
+		width: 190px;
+	}
+	.aquarium__fish7{
+		animation: swim1 5s infinite;
+		width: 190px;
+	}
+	.aquarium__fish8{
+		animation: swim2 3s infinite linear;
+		width: 190px;
+	}
+	.aquarium__fish9{
+		animation: swim1 4s infinite linear;
+		width: 190px;
+	}
+	.aquarium__fish11{
+		animation: swim2 7s infinite;
+		width: 190px;
+	}
+	.aquarium__snail{
+		animation: swim1 150s infinite linear;
+		width: 47px;
+	}
+}
+
+@media (max-width: 767px){
+	.aquarium{
+		padding: 70px 130px 0px 0px;
+	}
+	.aquarium__seaweed{
+		width: 225px;
+	}
+	.aquarium__fish2{
+		animation: swim1 5s infinite;
+		width: 130px;
+	}
+	.aquarium__fish6{
+		animation: swim2 7s infinite;
+		width: 130px;
+	}
+	.aquarium__fish7{
+		animation: swim1 4s infinite;
+		width: 130px;
+	}
+	.aquarium__fish8{
+		animation: swim2 2s infinite linear;
+		width: 130px;
+	}
+	.aquarium__fish9{
+		animation: swim1 3s infinite linear;
+		width: 130px;
+	}
+	.aquarium__fish11{
+		animation: swim2 6s infinite;
+		width: 130px;
+	}
+	.aquarium__snail{
+		animation: swim1 125s infinite linear;
+		width: 34px;
+	}
+}
+
+@media (max-width: 320px){
+	.aquarium{
+		padding: 70px 100px 0px 0px;
+	}
+	.aquarium__seaweed{
+		width: 150px;
+	}
+	.aquarium__fish2{
+		animation: swim1 4s infinite;
+		width: 100px;
+	}
+	.aquarium__fish6{
+		animation: swim2 6s infinite;
+		width: 100px;
+	}
+	.aquarium__fish7{
+		animation: swim1 3s infinite;
+		width: 100px;
+	}
+	.aquarium__fish8{
+		animation: swim2 1s infinite linear;
+		width: 100px;
+	}
+	.aquarium__fish9{
+		animation: swim1 2s infinite linear;
+		width: 100px;
+	}
+	.aquarium__fish11{
+		animation: swim2 5s infinite;
+		width: 100px;
+	}
+	.aquarium__snail{
+		animation: swim1 100s infinite linear;
+		width: 20px;
+	}
+}
